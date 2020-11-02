@@ -30,10 +30,14 @@ int linearsearch(int data[5], int size, int sk)
 
 int main()
 {
+
     int data[100];
     int size;
     int sk;
     int st;
+
+  banner();
+
 
     printf("[!] Enter The Number Of elements in Your set : ");
     scanf("%d",&size);
@@ -110,3 +114,14 @@ void bubblesort( int data[100], int size,int sk)
          linearsearch(data, size, sk);
 
 }
+
+ void banner()
+ {
+   printf("\n");
+   printf("-------------------------------------------------------------------------------------------\n");
+   printf("\t\t\tBinary Search Algorithem using C\n");
+   printf("\t\t\t\tCoded By D4az\n");
+   printf("This also has bubble sort too because we cant do binary search for decending oder arrays\n");
+   printf("-------------------------------------------------------------------------------------------\n");
+   printf("\n");
+ }
