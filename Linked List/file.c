@@ -1,52 +1,49 @@
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 
-typedef struct
+typedef struct node
 {
-	char theword[10];
-	char theoutput[10];
-	char data[10];
-	int top;
-}hello;
 
-hello st;
-
-
-void push(char letter)
-{
-	st.data[st.top] = letter;
-	printf("%c enterd\n", st.data[st.top]);
-	st.top++;
-
-}
-
-void pop(int i)
-{
-	st.top--;
-	st.theoutput[i] = st.data[st.top];
-	printf("%c removed\n", st.data[st.top]);
-}
+    int data;
+    struct node *next;
+};
 
 int main(void)
 {
-	printf("Reversing a string using stack - C\n\n");
-	printf("Enter The charactor : ");
-	scanf("%s", &st.theword);
 
-	for (int i = 0; i < strlen(st.theword); i++)
-	{
-		push(st.theword[i]);
-	}
+    struct node *start;
 
-	for (int i = 0; i < strlen(st.theword); i++)
-	{
-		pop(i);
-	}
+    start = (struct node *)malloc(sizeof(struct node));
 
-	printf("\n\nthe reversed string is : \n\n");
+    //creating the nodes of the linked list
 
-	for (int i = 0; i <= strlen(st.theword); i++)
-	{
-		printf("%c", st.theoutput[i]);
-	}
+    struct node *nodevalue1;
+    nodevalue1 = (struct node *)malloc(sizeof(struct node));
+
+    struct node *nodevalue2;
+    nodevalue2 = (struct node *)malloc(sizeof(struct node));
+
+    struct node *nodevalue3;
+    nodevalue3 = (struct node *)malloc(sizeof(struct node));
+
+    struct node *nodevalue4;
+    nodevalue4 = (struct node *)malloc(sizeof(struct node));
+
+    //giving values for the nodes
+    nodevalue1->data = 20;
+    nodevalue2->data = 40;
+    nodevalue3->data = 50;
+    nodevalue4->data = 70;
+
+    //connecting the nodes
+
+    nodevalue1->next = nodevalue2;
+    nodevalue2->next = nodevalue3;
+    nodevalue3->next = nodevalue4;
+    nodevalue4->next = NULL;
+
+    //printing the nodes
+
+    printf("[%d %d] -> [%d %d] -> [%d %d] -> [%d NULL]", nodevalue1->data, nodevalue1->next, nodevalue2->data,
+           nodevalue2->next, nodevalue3->data, nodevalue3->next, nodevalue4->data);
 }
