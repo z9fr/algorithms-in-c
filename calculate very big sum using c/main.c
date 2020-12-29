@@ -17,4 +17,5 @@ int main()
         sum = sum + arr[i];
     }
     printf("%ld",sum);
+    
 }
