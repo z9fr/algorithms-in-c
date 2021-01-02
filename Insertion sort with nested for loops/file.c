@@ -1,38 +1,30 @@
+/* C Program for Insertion Sort */
 #include <stdio.h>
-#define size 5
-void insertionsort(int data[size]);
-
-int main(void)
+int main()
 {
-	int data[size] = {5, 4, 3, 2, 1};
-	insertionsort(data);
-}
-
-void insertionsort(int data[size])
-{
-
-	int mid;
-	for (int i = 0; i < size; i++)
-	{
-		mid = i;
-
-		for(int j = i+1 ; j < size ; j++){
-
-			if(data[mid] > data[j]){
-				mid = j;
-			}
-
-			if(mid != i){
-				data[mid] = data[mid] + data[i];
-				data[i] = data[mid] - data[i];
-				data[mid] = data[mid] - data[i];
-			}
-		}
-	}
-
-    printf("this soarted array is : \n");
-
-	for(int i = 0 ; i < size ; i++){
-		printf("%d\n", data[i]);
-	}
+    int a[100], number, i, j, temp;
+    
+    printf("\n Please Enter the total Number of Elements  :  ");
+    scanf("%d", &number);
+    
+    printf("\n Please Enter the Array Elements  :  ");
+    for(i = 0; i < number; i++)
+        scanf("%d", &a[i]);
+    
+    for(i = 1; i <= number - 1; i++)
+    {
+        for(j = i; j > 0 && a[j - 1] > a[j]; j--)
+        {
+                temp = a[j];
+                a[j] = a[j - 1];
+                a[j - 1] = temp;
+        }
+    }
+    printf("\n Insertion Sort Result : ");
+    for(i = 0; i < number; i++)
+    {
+        printf(" %d \t", a[i]);
+    }
+    printf("\n");
+    return 0;
 }
