@@ -1,7 +1,4 @@
 #include <stdio.h>
-
-
-
 void bubblesort( int data[100], int size)
 {
     int temp;
