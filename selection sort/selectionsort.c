@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 void selectionsort(int data[100], int size){
   int temp=0;
   int min=0;
@@ -46,7 +45,6 @@ void selectionsort(int data[100], int size){
     scanf("%d",&arr[i]);
   }
 
-
    selectionsort(arr,size);
  }
  
@@ -54,7 +52,7 @@ void selectionsort(int data[100], int size){
  {
    printf("\n");
    printf("-------------------------------------------------------------------------------\n");
-   printf("\t\t\tSelection sort Algorithem using C\n");
+   printf("\t\t\tSelection sort Algorithem Using C\n");
    printf("\t\t\t\tCoded By D4az\n");
    printf("-------------------------------------------------------------------------------\n");
     printf("\n");
