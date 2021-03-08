@@ -57,7 +57,7 @@ int main(void)
 
         if (user == 1)
         {
-            printf("Enter a value to enqueue");
+            printf("Enter a value to Enqueue");
             scanf("%d", &value);
             enque(value);
             out = true;
