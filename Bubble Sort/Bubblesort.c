@@ -32,7 +32,7 @@ void bubblesort( int data[100], int size)
 
   banner();
 
-  printf("[!] Enter The size of the array you want so sorted :");
+  printf("[!] Enter the Size of the array you want so sorted :");
   scanf("%d",&size);
 
   for(int i =0 ; i < size ; i ++){
