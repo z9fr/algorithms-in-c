@@ -8,9 +8,7 @@ typedef struct
 	char data[10];
 	int top;
 }hello;
-
 hello st;
-
 
 void push(char letter)
 {
