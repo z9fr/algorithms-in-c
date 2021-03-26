@@ -9,7 +9,6 @@ int main(void)
 
 	printf("%d", factorial(n));
 }
-
 int factorial(int num)
 {
 	if (num <= 0)
