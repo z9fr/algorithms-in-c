@@ -23,7 +23,6 @@ void bubblesort( int data[100], int size)
        printf("\n");
 }
 
-
  int main()
  {
   
