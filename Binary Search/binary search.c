@@ -31,7 +31,6 @@ int binarysearch(int data[], int sk)
             first = first;
             last = mid - 1;
         }
-
         mid = (last + first) / 2;
     }
     return -1;
