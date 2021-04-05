@@ -13,7 +13,6 @@ void bubblesort( int data[100], int size)
             }
         }
     }
-
    printf("\n");
    printf("\t\t[!]The sorted array is : \n");
 
