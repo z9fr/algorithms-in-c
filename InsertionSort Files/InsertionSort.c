@@ -18,7 +18,6 @@
      }
    }
 
-
    printf("\n");
    printf("\t\t[!]The sorted array is : \n");
    
