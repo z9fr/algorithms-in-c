@@ -13,7 +13,6 @@ int binarysearch(int data[20], int size , int sk)
             num= 1;
         }
 
-
     }
 
     if(num == 999){
