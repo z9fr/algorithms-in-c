@@ -17,7 +17,6 @@ void selectionsort(int data[100], int size){
       }
     }
   }
-
    printf("\n");
    printf("\t[!]The sorted array is : \n");
 
