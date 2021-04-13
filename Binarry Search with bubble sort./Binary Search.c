@@ -2,7 +2,6 @@
 
 int linearsearch(int data[5], int size, int sk)
 {
-
     int low=0;
     int high=size-1;
     int mid = (low +high)/2;
