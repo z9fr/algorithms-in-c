@@ -6,7 +6,6 @@ int main()
     long int sum;
 
     scanf("%d",&size);
-
     long int arr[size];
 
     int f;
