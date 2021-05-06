@@ -4,7 +4,6 @@ void linearsearc(char data[5]);
 int main(void)
 {
     char data[5] = {"abcde"};
-
     linearsearc(data);
 }
 
