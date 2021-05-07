@@ -4,6 +4,7 @@
 
 int binarysearch(int data[], int sk)
 {
+    
     int first = 0;
     int last = size - 1;
     int mid = (last + first) / 2;
