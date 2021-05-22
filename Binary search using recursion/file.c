@@ -8,7 +8,6 @@ int main(void)
 	int low, high;
 
 	num = 10;
-
 	int data[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
 	low = 0;
