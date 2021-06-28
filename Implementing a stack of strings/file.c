@@ -20,6 +20,7 @@ void pop()
 {
 	st.top--;
 	printf("%c", st.data[st.top]);
+	
 }
 
 int main(void)
